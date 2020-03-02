@@ -1,0 +1,24 @@
+To create package.json file you need to use NPM (Node Package Manager).
+
+1. To initialize a package
+$: npm init
+follow the procedure and o completion you will see a package.json file.
+
+2. To install a package
+$: npm install <package name>
+in node_modules folder your package will be added & in package.json as dependencies.
+
+3. To uninstall a package
+$: npm uninstall <package name>
+from node_modules folder your package will be removed & from package.json as dependencies.
+
+4. understanding versioning semantics
+eg. lodash: "^4.17.11"
+In above example three numbers indicate major no, minor no and patch no. 
+The patch is just a fix.
+Minor version means new functionality or deprecated but the code will not break;
+Major version means the strucure is completely changed. Code will break.
+
+The ^ sign means don't update for minor version and patch no.
+The ~ sign means only update for patches.
+If you want exact same version then dont put any sign.
